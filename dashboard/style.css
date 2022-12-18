@@ -1,0 +1,134 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.side-menu{
+    position: fixed;
+    background: #868585;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.side-menu ul li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 40px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.side-menu ul li:hover{
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 40px;
+    display: flex;
+    background: white;
+    align-items: center;
+    transition: 0.5s;
+}
+/*********************************************************/
+
+.container header{
+    width: 80vw;
+    position: absolute;
+    right: 0;
+    background: #868585;
+    height: 10vh;
+    line-height: 10vh;
+    display: flex;
+}
+.container .search{
+    display: flex;
+    margin-left: 50px;
+}
+.container .search input{
+    width: 300px;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+}
+.container .search p{
+    margin-left: 5px;
+}
+.container header .profile-pic{
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    display: flex;
+}
+.container header .profile-pic div{
+    width: 50px;
+    margin: 5px;
+    height: 8vh;
+    border-radius: 50px;
+    background: #6c6c6c;
+}
+.container .first-section {
+    position: absolute;
+    width: 80vw;
+    height: 30vh;
+    right: 0;
+    display: flex;
+    margin-top: 10vh;
+
+}
+.container .first-section div{
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    background: #868585;
+    height: 20vh;
+    margin-top: 30px;
+}
+.container .second-section{
+    position: absolute;
+    height: 60vh;
+    width: 80vw;
+    right: 0;
+    margin-top: 40vh;
+    display: flex;
+}
+.container .second-section div{
+    width: 38vw;
+    margin: 0 auto;
+    height: 50vh;
+    border-radius: 5px;
+    background: #868585;
+}
+
+
+@media screen and (max-width: 700px){
+    .side-menu ul li{
+        color: green;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .side-menu ul li{
+        color: crimson;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
