@@ -1,9 +1,8 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: Georgia;
 }
 body{
     min-height: 100vh;
@@ -24,25 +23,29 @@ ul li{
 }
 .side-menu .brand-name{
     display: flex;
-    justify-content: center;
-    height: 10vh;
+    line-height: 10vh;
+    color: white;
+    height: 10vh;padding-left: 40px;
 }
 .side-menu ul li{
-    font-size: 20px;
+    border-radius: 5px;
+    background: #7c7879;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 40px;
     display: flex;
     color: white;
+    margin-bottom: 1px;
     align-items: center;
 }
 .side-menu ul li:hover{
     cursor: pointer;
-    color: black;
-    font-size: 20px;
+    color: #525e5e;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 40px;
     display: flex;
-    background: white;
+
     align-items: center;
     transition: 0.5s;
 }
@@ -65,7 +68,7 @@ ul li{
     width: 300px;
     border: none;
     border-radius: 50px;
-    height: 30px;
+    height: 40px;
 }
 .container .search p{
     margin-left: 5px;
@@ -92,6 +95,17 @@ ul li{
     margin-top: 10vh;
 
 }
+.container .first-section p{
+    padding: 5px 10px;
+    color: white;
+    border-bottom: 1px solid;
+}
+.container .first-section h1{
+    padding: 5px 10px;
+    color: white;
+    font-family: "Cambria Math"
+}
+
 .container .first-section div{
     width: 250px;
     margin: 0 auto;
@@ -114,21 +128,44 @@ ul li{
     margin: 0 auto;
     height: 50vh;
     border-radius: 5px;
-    background: #868585;
+    background: #d9d9d9;
 }
 
-
-@media screen and (max-width: 700px){
-    .side-menu ul li{
-        color: green;
-        font-size: 16px;
-        padding: 10px 20px;
+@media screen and (max-width: 640px){
+    .side-menu .brand-name{
+        font-size: 5px;
+        padding-left: 2px;
+        color: crimson;
     }
-}
-@media screen and (max-width: 500px){
+    .side-menu{
+        width: 15vw;
+    }
+    .side-menu span{
+        display: none;
+    }
     .side-menu ul li{
         color: crimson;
         font-size: 12px;
         padding: 5px 10px;
+        height: 50px;
+    }
+    .side-menu ul li:hover{
+        color: crimson;
+        background: #d9d9d9;
+        font-size: 12px;
+        padding: 5px 10px;
+        height: 50px;
+    }
+    .container .search input{
+        display: none;
+    }
+    .container header .profile-pic div{
+        width: 40px;
+        height: 40px;
+        line-height: initial;
+        background: crimson;
+    }
+    .container .first-section{
+        display: initial;
     }
 }
